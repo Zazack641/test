@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web Simple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Lien de saut pour l'accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- En-tête avec le titre du site -->
+    <header>
+        <h1>Bienvenue sur Mon Site Web</h1>
+    </header>
+
+    <!-- Menu de navigation simple -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section de contenu principal -->
+    <main id="main-content">
+        <section id="accueil">
+            <h2>🖥️ Scénario complet étape par étape pour créer un premier site web</h2>
+            <ol>
+                <li>
+                    <h3>1️⃣ Créer un dépôt GitHub</h3>
+                    <p><strong>Objectif :</strong> avoir un "classeur" pour stocker le site.</p>
+                    <p><strong>Étapes :</strong></p>
+                    <ol>
+                        <li>Ouvre github.com et connecte-toi.</li>
+                        <li>Clique sur New repository (nouveau dépôt).</li>
+                        <li>Donne un nom simple, par ex. mon-premier-site.</li>
+                        <li>Choisis Public.</li>
+                        <li>Coche Add a README file (optionnel pour l’instant).</li>
+                        <li>Clique sur Create repository.</li>
+                    </ol>
+                    <p><strong>💬 Phrase à dire :</strong> Voilà, j’ai créé un endroit pour mon site. Tout sera sauvegardé ici.</p>
+                </li>
+                <li>
+                    <h3>2️⃣ Ouvrir le dépôt dans Codespaces</h3>
+                    <p><strong>Objectif :</strong> coder directement dans le cloud, sans rien installer.</p>
+                    <p><strong>Étapes :</strong></p>
+                    <ol>
+                        <li>Dans ton dépôt GitHub, clique sur Code → Codespaces → Create codespace on main.</li>
+                        <li>Patiente quelques secondes : VS Code s’ouvre dans le navigateur.</li>
+                        <li>Explore l’interface : à gauche, les fichiers ; en haut, le terminal.</li>
+                    </ol>
+                    <p><strong>💬 Phrase à dire :</strong> On travaille maintenant directement dans le cloud. Rien à installer, tout est prêt.</p>
+                </li>
+                <li>
+                    <h3>3️⃣ Créer les fichiers de base</h3>
+                    <p><strong>Objectif :</strong> préparer la structure minimale du site.</p>
+                    <p><strong>Étapes :</strong></p>
+                    <ol>
+                        <li>Clique sur New File et crée index.html.</li>
+                        <li>Clique sur New File et crée style.css.</li>
+                        <li>Crée un dossier images (clic droit → New Folder).</li>
+                    </ol>
+                    <p><strong>💬 Phrase à dire :</strong> On sépare le contenu (HTML), la mise en forme (CSS) et les images. Ça rend le site facile à modifier.</p>
+                </li>
+                <li>
+                    <h3>4️⃣ Utiliser l’IA pour générer la structure de base</h3>
+                    <p><strong>Objectif :</strong> gagner du temps et avoir un code propre.</p>
+                    <p><strong>Prompt à donner à l’IA (copier-coller) :</strong></p>
+                    <blockquote>
+                        Agis comme un développeur web débutant mais rigoureux.<br>
+                        Je veux créer un site web simple, clair et accessible.<br>
+                        Contraintes :<br>
+                        - site statique (HTML + CSS)<br>
+                        - code lisible et commenté<br>
+                        - pas de framework<br>
+                        - adapté à un contexte scolaire<br>
+                        Structure demandée :<br>
+                        - index.html<br>
+                        - style.css<br>
+                        - dossier images/<br>
+                        Éléments obligatoires :<br>
+                        - en-tête avec un titre<br>
+                        - menu simple<br>
+                        - une section de contenu<br>
+                        - pied de page<br>
+                        Commence par créer les fichiers de base avec un contenu minimal fonctionnel.
+                    </blockquote>
+                    <p><strong>💬 Phrase à dire :</strong> Je commence toujours par la structure. Le contenu et le design viendront après.</p>
+                </li>
+                <li>
+                    <h3>5️⃣ Visualiser le site depuis Codespaces</h3>
+                    <p><strong>Objectif :</strong> voir le résultat immédiatement.</p>
+                    <p><strong>Étapes :</strong></p>
+                    <ol>
+                        <li>Ouvre le Terminal (en bas).</li>
+                        <li>Tape : <code>python3 -m http.server</code></li>
+                        <li>Codespaces te propose un lien Open in Browser → clique dessus.</li>
+                        <li>Ton site s’ouvre dans un nouvel onglet.</li>
+                    </ol>
+                    <p><strong>💬 Phrase à dire :</strong> Avant de publier, je teste le site localement. Je peux modifier et actualiser instantanément.</p>
+                </li>
+                <li>
+                    <h3>6️⃣ Modifier le site avec l’IA (prompts progressifs)</h3>
+                    <p><strong>Objectif :</strong> enrichir le site étape par étape.</p>
+                    <p><strong>Exemple de prompt "continuité" :</strong></p>
+                    <blockquote>
+                        À partir du site existant,<br>
+                        modifie uniquement la section "Présentation" pour<br>
+                        ajouter un texte plus court et plus clair.<br>
+                        Ne change pas le reste du code.
+                    </blockquote>
+                    <p><strong>💬 Phrase à dire :</strong> On guide l’IA comme on guiderait un élève : une consigne claire à la fois.</p>
+                </li>
+                <li>
+                    <h3>7️⃣ Publier le site sur Netlify</h3>
+                    <p><strong>Objectif :</strong> rendre le site accessible sur Internet.</p>
+                    <p><strong>Étapes :</strong></p>
+                    <ol>
+                        <li>Ouvre netlify.com et crée un compte gratuit.</li>
+                        <li>Clique sur New site from Git → GitHub.</li>
+                        <li>Autorise Netlify à accéder à ton dépôt.</li>
+                        <li>Choisis le dépôt de ton site (mon-premier-site).</li>
+                        <li>Clique sur Deploy site.</li>
+                        <li>Une URL est générée automatiquement → partageable.</li>
+                    </ol>
+                    <p><strong>💬 Phrase à dire :</strong> GitHub contient le site, Netlify le rend public. Le dépôt peut rester privé si on veut.</p>
+                </li>
+                <li>
+                    <h3>8️⃣ Vérifier et mettre à jour</h3>
+                    <p><strong>Objectif :</strong> maintenir le site à jour.</p>
+                    <p><strong>Étapes :</strong></p>
+                    <ol>
+                        <li>Retourne dans Codespaces.</li>
+                        <li>Modifie un fichier.</li>
+                        <li>Commit et push sur GitHub.</li>
+                        <li>Netlify met automatiquement le site à jour.</li>
+                    </ol>
+                    <p><strong>💬 Phrase à dire :</strong> Toutes mes modifications se reflètent automatiquement sur le site en ligne.</p>
+                </li>
+                <li>
+                    <h3>9️⃣ Points sécurité et bonnes pratiques</h3>
+                    <p><strong>Objectif :</strong> rester prudent et organisé.</p>
+                    <ul>
+                        <li>Ne pas mettre de données sensibles (ex : noms ou photos d’élèves).</li>
+                        <li>Toujours tester avant de publier.</li>
+                        <li>Garder le dépôt bien organisé.</li>
+                    </ul>
+                    <p><strong>💬 Phrase clé :</strong> On sépare contenu, code et publication pour rester simple et sûr.</p>
+                </li>
+            </ol>
+            <h3>🔚 Conclusion</h3>
+            <p>En quelques étapes, on peut créer, modifier, tester et publier un site web. Avec l’IA, on se concentre sur nos idées plutôt que sur la technique. Le processus est reproductible et accessible à tous.</p>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 Mon Site Web. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

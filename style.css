@@ -1,0 +1,94 @@
+/* Feuille de style pour le site web simple */
+
+/* Styles généraux pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police simple et lisible */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements par défaut */
+    line-height: 1.6; /* Améliore la lisibilité du texte */
+    color: #333; /* Couleur du texte principale */
+    background-color: #fff; /* Fond blanc */
+}
+
+/* Styles pour le lien de saut (accessibilité) */
+.skip-link {
+    position: absolute;
+    left: -9999px; /* Cache le lien hors écran */
+    z-index: 999;
+}
+
+.skip-link:focus {
+    left: 6px; /* Rend visible au focus */
+    top: 7px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #4CAF50; /* Couleur verte pour l'en-tête, contraste élevé */
+    color: white; /* Texte blanc */
+    padding: 1em; /* Espacement interne */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Styles pour le menu de navigation */
+nav {
+    background-color: #f4f4f4; /* Fond gris clair */
+    padding: 0.5em; /* Espacement interne */
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime les espacements par défaut */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centrage du menu */
+}
+
+nav li {
+    display: inline; /* Affiche les éléments en ligne */
+    margin: 0 1em; /* Espacement entre les liens */
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #333; /* Couleur du texte des liens */
+    font-weight: bold; /* Texte en gras */
+    padding: 0.5em; /* Espacement pour faciliter le clic */
+}
+
+nav a:hover, nav a:focus {
+    color: #4CAF50; /* Couleur au survol et au focus */
+    outline: 2px solid #4CAF50; /* Contour visible pour l'accessibilité */
+}
+
+/* Styles pour le contenu principal */
+main {
+    padding: 2em; /* Espacement interne */
+    max-width: 800px; /* Largeur maximale pour la lisibilité */
+    margin: 0 auto; /* Centrage horizontal */
+    min-height: calc(100vh - 200px); /* Assure que le contenu prend au moins la hauteur de la vue pour pousser le footer */
+}
+
+/* Styles pour les sections */
+section {
+    margin-bottom: 2em; /* Espacement entre les sections */
+}
+
+section h2 {
+    color: #4CAF50; /* Couleur des titres de section */
+    border-bottom: 2px solid #4CAF50; /* Ligne sous les titres */
+    padding-bottom: 0.5em; /* Espacement sous les titres */
+}
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #333; /* Fond sombre */
+    color: white; /* Texte blanc */
+    text-align: center; /* Centrage du texte */
+    padding: 1em; /* Espacement interne */
+    margin-top: 2em; /* Espacement au-dessus du footer */
+}
